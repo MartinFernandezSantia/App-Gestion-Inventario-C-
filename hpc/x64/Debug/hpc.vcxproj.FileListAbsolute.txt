@@ -1,0 +1,4 @@
+C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
