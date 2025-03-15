@@ -2,3 +2,137 @@ C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference
 C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
 C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
 C:\Users\JayParzival\Desktop\Hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+Z:\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+Z:\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+Z:\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+Z:\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+Z:\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\JayParzival\Desktop\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\JayParzival\Desktop\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\JayParzival\Desktop\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\JayParzival\Desktop\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\JayParzival\Desktop\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\JayParzival\Desktop\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+E:\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.dll
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+C:\Users\JayParzival\Desktop\Instituto\Hpc\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+E:\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\JayParzival\Desktop\Instituto\Hpc\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+E:\hpc(estesi)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.dll
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\lucia\OneDrive\Documentos\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+E:\hpc(estesi) (4)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\Franco\Desktop\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\x64\Debug\Newtonsoft.Json.xml
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\lucia\OneDrive\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+C:\Users\marti\Escritorio\hpc(estesi2.0) (2)\hpc(estesi)\proyecto-hpc\proyecto-hpc\hpc\hpc\x64\Debug\hpc.MyForm.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.MyForm.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date

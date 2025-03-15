@@ -1,0 +1,83 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.42.34435.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/inicio.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0604b362a278e3a950178772da2b013d3d8776903df7f3dd23b645ee32bb4a52"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/pch.h"
+          },
+          "hashes": {
+            "sha-256": "7e9de1274d4f70a1d691a27a2b83c598aa48de9677bc8c9edff2e07675464bec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/inicio.h"
+          },
+          "hashes": {
+            "sha-256": "352c67a1cba891b3166bf3f7403bc5b770f301fc40c4e17483f1ac7b32d23313"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/movimientos.h"
+          },
+          "hashes": {
+            "sha-256": "acc3a328894e92daee4e81652269c738113d1c4477d024b64209cb3c81be1776"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/stock.h"
+          },
+          "hashes": {
+            "sha-256": "6fc0c52c239acdc5d8127363d8d3f704588d46a137ab8c4fcc66569b9bd9bf97"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/usuarios.h"
+          },
+          "hashes": {
+            "sha-256": "8f9dbee2b026614b4a9ba760e67bf2ab0452e60bb179e9652ac08267545a87dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/hpc(estesi)/hpc(estesi)/proyecto-hpc/proyecto-hpc/hpc/categorias.h"
+          },
+          "hashes": {
+            "sha-256": "4065e65b8a0ec32e5bda52d85a4f940980f679df630ca0f6b1ddef21c3c59054"
+          }
+        }
+      ]
+    }
+  ]
+}
