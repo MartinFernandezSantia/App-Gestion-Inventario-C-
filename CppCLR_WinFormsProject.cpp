@@ -10,12 +10,15 @@ using namespace System;
 #include "Form1.h"
 
 using namespace System::Windows::Forms;
+using namespace CppCLRWinFormsProject;
 
 [STAThread]
 int main()
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
+
   Application::Run(gcnew CppCLRWinFormsProject::Form1());
+  //Controller^ controller = gcnew Controller();
   return 0;
 }

@@ -30,6 +30,7 @@ namespace CppCLRWinFormsProject {
 		Form1(void)
 		{
 			InitializeComponent();
+			this->Show();
 			//
 			//TODO: Add the constructor code here
 			//
@@ -46,9 +47,14 @@ namespace CppCLRWinFormsProject {
 				delete components;
 			}
 		}
+
+	public: Boolean^ LoginSuccessful = false;
 	private: System::Windows::Forms::Panel^ panel1;
-	private: System::Windows::Forms::TextBox^ passLog;
-	private: System::Windows::Forms::TextBox^ nameLog;
+	public: System::Windows::Forms::TextBox^ passLog;
+	private:
+	public: System::Windows::Forms::TextBox^ nameLog;
+
+
 
 
 
@@ -60,8 +66,10 @@ namespace CppCLRWinFormsProject {
 
 
 	private: System::Windows::Forms::Label^ label1;
+	public: System::Windows::Forms::Button^ loginBtn;
+	private:
 
-	private: System::Windows::Forms::Button^ loginBtn;
+
 
 	private: System::Windows::Forms::LinkLabel^ linkLabel1;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
@@ -124,7 +132,7 @@ namespace CppCLRWinFormsProject {
 			// picShowPassword
 			// 
 			this->picShowPassword->Location = System::Drawing::Point(353, 441);
-			this->picShowPassword->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->picShowPassword->Margin = System::Windows::Forms::Padding(2);
 			this->picShowPassword->Name = L"picShowPassword";
 			this->picShowPassword->Size = System::Drawing::Size(26, 28);
 			this->picShowPassword->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -234,7 +242,7 @@ namespace CppCLRWinFormsProject {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->pictureBox1->Location = System::Drawing::Point(102, 30);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(182, 170);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -261,13 +269,14 @@ namespace CppCLRWinFormsProject {
 
 		}
 #pragma endregion
-	private:
+	public:
 		String^ accessToken;
 		int id;
 		String^ legajo;
 		String^ nombreUsuario;
 		String^ tipo;
 		bool isPasswordVisible = false; // Variable de estado
+		String^ permiso = "Desconocido";
 
 	private: System::Void loginBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ apiUrl = "https://api-gestion-inventario.up.railway.app/auth/login";
@@ -327,17 +336,21 @@ namespace CppCLRWinFormsProject {
 				String^ apellido = safe_cast<String^>(userObject["apellido"]);
 
 				// Acceder al campo "permiso" anidado
-				String^ permiso = "Desconocido"; // Valor predeterminado
 				if (userObject->ContainsKey("permiso")) {
 					JObject^ permisoObject = safe_cast<JObject^>(userObject["permiso"]);
 					permiso = safe_cast<String^>(permisoObject["nombre"]);
 				}
 
+				if (permiso != "Administrador" && permiso != "Tecnico") {
+					MessageBox::Show("Permisos del usuario insuficientes", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+					return;
+				}
 				// Redirigir a la pantalla de inicio
-				MyForm^ inicioForm = gcnew MyForm();
-				inicioForm->init();
-				inicioForm->Show();
+				MyForm^ mainForm = gcnew MyForm(permiso);
+				mainForm->init();
+				mainForm->Show();
 				this->Hide();
+
 			}
 			else {
 				MessageBox::Show("Legajo o contraseña incorrectos.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
@@ -359,7 +372,6 @@ namespace CppCLRWinFormsProject {
 			MessageBox::Show("Error inesperado: " + ex->Message, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
-		   
 
 	private: System::Void picShowPassword_Click(System::Object^ sender, System::EventArgs^ e) {
 		isPasswordVisible = !isPasswordVisible;

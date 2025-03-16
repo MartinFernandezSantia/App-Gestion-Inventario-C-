@@ -1,10 +1,10 @@
-﻿  CppCLR_WinFormsProject.cpp
-C:\Users\marti\Escritorio\hpc\MyForm.h(1824,24): warning C4101: 'ex': variable local sin referencia
-  (compilando archivo de origen "/CppCLR_WinFormsProject.cpp")
+﻿  Controller.cpp
+C:\Users\marti\Escritorio\hpc\MyForm.h(1832,24): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/Controller.cpp")
   
-  MyForm.cpp
-C:\Users\marti\Escritorio\hpc\MyForm.h(1824,24): warning C4101: 'ex': variable local sin referencia
-  (compilando archivo de origen "/MyForm.cpp")
+  CppCLR_WinFormsProject.cpp
+C:\Users\marti\Escritorio\hpc\MyForm.h(1832,24): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/CppCLR_WinFormsProject.cpp")
   
   Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo

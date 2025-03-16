@@ -19,12 +19,15 @@ namespace CppCLRWinFormsProject {
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		MyForm(String^ permiso)
 		{
 			InitializeComponent();
-			//
-			//TODO: agregar código de constructor aquí
-			//
+			if (permiso == "Administrador") {
+
+			}
+			else if (permiso == "Tecnico") {
+
+			}
 		}
 
 	protected:
@@ -1447,6 +1450,8 @@ namespace CppCLRWinFormsProject {
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
+			this->FormClosing += gcnew FormClosingEventHandler(this, &MyForm::MyForm_FormClosing);
+
 		}
 #pragma endregion
 	public: System::Void init() {
@@ -1454,6 +1459,9 @@ namespace CppCLRWinFormsProject {
 		CargarMovimientos();
 		CargarStock();
 		CargarUsuarios();
+	}
+	private: System::Void MyForm_FormClosing(System::Object^ sender, FormClosingEventArgs^ e) {
+		Application::Exit();
 	}
 
 	private: System::Void CargarStock() {
