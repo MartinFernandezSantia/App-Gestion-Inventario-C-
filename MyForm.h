@@ -23,10 +23,18 @@ namespace CppCLRWinFormsProject {
 		{
 			InitializeComponent();
 			if (permiso == "Administrador") {
-
+				CargarCategorias();
+				CargarMovimientos();
+				CargarStock();
+				CargarUsuarios();
 			}
 			else if (permiso == "Tecnico") {
+				// Remover pestaña usuarios
+				tabControl1->TabPages->Remove(tabPage3);
 
+				CargarCategorias();
+				CargarMovimientos();
+				CargarStock();
 			}
 		}
 
@@ -122,6 +130,7 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::ToolStripMenuItem^ opcionesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ cerrarSesiónToolStripMenuItem;
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+private: System::Windows::Forms::Label^ label16;
 
 	protected:
 
@@ -221,22 +230,22 @@ namespace CppCLRWinFormsProject {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle7 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle8 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle9 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle10 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle11 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle12 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle13 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle14 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle15 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle16 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle49 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle50 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle51 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle52 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle53 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle54 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle55 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle56 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle57 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle58 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle59 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle60 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle61 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle62 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle63 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle64 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->label9 = (gcnew System::Windows::Forms::Label());
@@ -314,6 +323,7 @@ namespace CppCLRWinFormsProject {
 			this->opcionesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->cerrarSesiónToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -335,10 +345,11 @@ namespace CppCLRWinFormsProject {
 			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tabControl1->Location = System::Drawing::Point(0, 24);
+			this->tabControl1->Location = System::Drawing::Point(0, 28);
+			this->tabControl1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(1237, 662);
+			this->tabControl1->Size = System::Drawing::Size(1649, 816);
 			this->tabControl1->TabIndex = 1;
 			// 
 			// tabPage1
@@ -348,10 +359,11 @@ namespace CppCLRWinFormsProject {
 			this->tabPage1->Controls->Add(this->label7);
 			this->tabPage1->Controls->Add(this->label5);
 			this->tabPage1->Controls->Add(this->label6);
-			this->tabPage1->Location = System::Drawing::Point(4, 22);
+			this->tabPage1->Location = System::Drawing::Point(4, 25);
+			this->tabPage1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(1229, 636);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage1->Size = System::Drawing::Size(1641, 787);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Inicio";
 			this->tabPage1->UseVisualStyleBackColor = true;
@@ -363,9 +375,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label9->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(59)),
 				static_cast<System::Int32>(static_cast<System::Byte>(80)));
-			this->label9->Location = System::Drawing::Point(28, 330);
+			this->label9->Location = System::Drawing::Point(37, 406);
+			this->label9->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(376, 21);
+			this->label9->Size = System::Drawing::Size(470, 28);
 			this->label9->TabIndex = 42;
 			this->label9->Text = L"Movimientos: revisar entradas y salidas de objetos";
 			// 
@@ -376,9 +389,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label8->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(59)),
 				static_cast<System::Int32>(static_cast<System::Byte>(80)));
-			this->label8->Location = System::Drawing::Point(28, 230);
+			this->label8->Location = System::Drawing::Point(37, 283);
+			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(305, 21);
+			this->label8->Size = System::Drawing::Size(383, 28);
 			this->label8->TabIndex = 41;
 			this->label8->Text = L"Usuarios: crear, editar y eliminar usuarios";
 			// 
@@ -389,9 +403,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label7->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(59)),
 				static_cast<System::Int32>(static_cast<System::Byte>(80)));
-			this->label7->Location = System::Drawing::Point(28, 280);
+			this->label7->Location = System::Drawing::Point(37, 345);
+			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(320, 21);
+			this->label7->Size = System::Drawing::Size(396, 28);
 			this->label7->TabIndex = 40;
 			this->label7->Text = L"Stock: agregar, cambiar y eliminar objetos.";
 			// 
@@ -402,9 +417,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(59)),
 				static_cast<System::Int32>(static_cast<System::Byte>(80)));
-			this->label5->Location = System::Drawing::Point(28, 130);
+			this->label5->Location = System::Drawing::Point(37, 160);
+			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(438, 21);
+			this->label5->Size = System::Drawing::Size(547, 28);
 			this->label5->TabIndex = 39;
 			this->label5->Text = L"En esta aplicacion van a poder controlar el trafico de stock ";
 			// 
@@ -415,10 +431,9 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label6->Location = System::Drawing::Point(26, 30);
-			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label6->Location = System::Drawing::Point(35, 37);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(182, 31);
+			this->label6->Size = System::Drawing::Size(229, 40);
 			this->label6->TabIndex = 38;
 			this->label6->Text = L"¡Bienvenido/a!";
 			// 
@@ -439,10 +454,11 @@ namespace CppCLRWinFormsProject {
 			this->tabPage2->Controls->Add(this->editarStockBtn);
 			this->tabPage2->Controls->Add(this->agregarStockBtn);
 			this->tabPage2->Controls->Add(this->dataGridViewStock);
-			this->tabPage2->Location = System::Drawing::Point(4, 22);
+			this->tabPage2->Location = System::Drawing::Point(4, 25);
+			this->tabPage2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(1229, 636);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage2->Size = System::Drawing::Size(1641, 786);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Stock";
 			this->tabPage2->UseVisualStyleBackColor = true;
@@ -456,10 +472,10 @@ namespace CppCLRWinFormsProject {
 			this->actualizarStockBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->actualizarStockBtn->ForeColor = System::Drawing::Color::SteelBlue;
-			this->actualizarStockBtn->Location = System::Drawing::Point(1123, 312);
-			this->actualizarStockBtn->Margin = System::Windows::Forms::Padding(2);
+			this->actualizarStockBtn->Location = System::Drawing::Point(1497, 384);
+			this->actualizarStockBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->actualizarStockBtn->Name = L"actualizarStockBtn";
-			this->actualizarStockBtn->Size = System::Drawing::Size(107, 42);
+			this->actualizarStockBtn->Size = System::Drawing::Size(143, 52);
 			this->actualizarStockBtn->TabIndex = 47;
 			this->actualizarStockBtn->Text = L"Actualizar";
 			this->actualizarStockBtn->UseVisualStyleBackColor = false;
@@ -469,10 +485,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->codigoTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->codigoTB->Location = System::Drawing::Point(162, 213);
+			this->codigoTB->Location = System::Drawing::Point(216, 262);
+			this->codigoTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->codigoTB->Multiline = true;
 			this->codigoTB->Name = L"codigoTB";
-			this->codigoTB->Size = System::Drawing::Size(204, 30);
+			this->codigoTB->Size = System::Drawing::Size(271, 36);
 			this->codigoTB->TabIndex = 46;
 			// 
 			// label1
@@ -482,9 +499,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label1->Location = System::Drawing::Point(20, 212);
+			this->label1->Location = System::Drawing::Point(27, 261);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(83, 30);
+			this->label1->Size = System::Drawing::Size(105, 37);
 			this->label1->TabIndex = 45;
 			this->label1->Text = L"Código";
 			// 
@@ -492,10 +510,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->limiteTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->limiteTB->Location = System::Drawing::Point(162, 164);
+			this->limiteTB->Location = System::Drawing::Point(216, 202);
+			this->limiteTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->limiteTB->Multiline = true;
 			this->limiteTB->Name = L"limiteTB";
-			this->limiteTB->Size = System::Drawing::Size(204, 30);
+			this->limiteTB->Size = System::Drawing::Size(271, 36);
 			this->limiteTB->TabIndex = 44;
 			// 
 			// label3
@@ -505,9 +524,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label3->Location = System::Drawing::Point(20, 164);
+			this->label3->Location = System::Drawing::Point(27, 202);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(71, 30);
+			this->label3->Size = System::Drawing::Size(92, 37);
 			this->label3->TabIndex = 43;
 			this->label3->Text = L"Límite";
 			// 
@@ -515,10 +535,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->categoriaIDTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->categoriaIDTB->Location = System::Drawing::Point(162, 114);
+			this->categoriaIDTB->Location = System::Drawing::Point(216, 140);
+			this->categoriaIDTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->categoriaIDTB->Multiline = true;
 			this->categoriaIDTB->Name = L"categoriaIDTB";
-			this->categoriaIDTB->Size = System::Drawing::Size(204, 30);
+			this->categoriaIDTB->Size = System::Drawing::Size(271, 36);
 			this->categoriaIDTB->TabIndex = 42;
 			// 
 			// label2
@@ -528,9 +549,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label2->Location = System::Drawing::Point(20, 114);
+			this->label2->Location = System::Drawing::Point(27, 140);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(133, 30);
+			this->label2->Size = System::Drawing::Size(169, 37);
 			this->label2->TabIndex = 41;
 			this->label2->Text = L"Categoria ID";
 			// 
@@ -538,10 +560,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->stockTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->stockTB->Location = System::Drawing::Point(162, 64);
+			this->stockTB->Location = System::Drawing::Point(216, 79);
+			this->stockTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->stockTB->Multiline = true;
 			this->stockTB->Name = L"stockTB";
-			this->stockTB->Size = System::Drawing::Size(204, 30);
+			this->stockTB->Size = System::Drawing::Size(271, 36);
 			this->stockTB->TabIndex = 40;
 			// 
 			// label4
@@ -551,9 +574,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label4->Location = System::Drawing::Point(20, 64);
+			this->label4->Location = System::Drawing::Point(27, 79);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(65, 30);
+			this->label4->Size = System::Drawing::Size(84, 37);
 			this->label4->TabIndex = 39;
 			this->label4->Text = L"Stock";
 			// 
@@ -561,10 +585,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->nombreStock->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->nombreStock->Location = System::Drawing::Point(162, 14);
+			this->nombreStock->Location = System::Drawing::Point(216, 17);
+			this->nombreStock->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->nombreStock->Multiline = true;
 			this->nombreStock->Name = L"nombreStock";
-			this->nombreStock->Size = System::Drawing::Size(204, 30);
+			this->nombreStock->Size = System::Drawing::Size(271, 36);
 			this->nombreStock->TabIndex = 38;
 			// 
 			// label10
@@ -574,9 +599,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label10->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label10->Location = System::Drawing::Point(20, 14);
+			this->label10->Location = System::Drawing::Point(27, 17);
+			this->label10->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(93, 30);
+			this->label10->Size = System::Drawing::Size(118, 37);
 			this->label10->TabIndex = 37;
 			this->label10->Text = L"Nombre";
 			// 
@@ -590,10 +616,10 @@ namespace CppCLRWinFormsProject {
 			this->eliminarStockBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->eliminarStockBtn->ForeColor = System::Drawing::Color::DarkRed;
-			this->eliminarStockBtn->Location = System::Drawing::Point(1123, 460);
-			this->eliminarStockBtn->Margin = System::Windows::Forms::Padding(2);
+			this->eliminarStockBtn->Location = System::Drawing::Point(1497, 566);
+			this->eliminarStockBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->eliminarStockBtn->Name = L"eliminarStockBtn";
-			this->eliminarStockBtn->Size = System::Drawing::Size(107, 45);
+			this->eliminarStockBtn->Size = System::Drawing::Size(143, 55);
 			this->eliminarStockBtn->TabIndex = 36;
 			this->eliminarStockBtn->Text = L"Eliminar";
 			this->eliminarStockBtn->UseVisualStyleBackColor = false;
@@ -608,10 +634,10 @@ namespace CppCLRWinFormsProject {
 			this->editarStockBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->editarStockBtn->ForeColor = System::Drawing::Color::SteelBlue;
-			this->editarStockBtn->Location = System::Drawing::Point(1123, 411);
-			this->editarStockBtn->Margin = System::Windows::Forms::Padding(2);
+			this->editarStockBtn->Location = System::Drawing::Point(1497, 506);
+			this->editarStockBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->editarStockBtn->Name = L"editarStockBtn";
-			this->editarStockBtn->Size = System::Drawing::Size(107, 42);
+			this->editarStockBtn->Size = System::Drawing::Size(143, 52);
 			this->editarStockBtn->TabIndex = 35;
 			this->editarStockBtn->Text = L"Editar";
 			this->editarStockBtn->UseVisualStyleBackColor = false;
@@ -627,10 +653,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->agregarStockBtn->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
 				static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			this->agregarStockBtn->Location = System::Drawing::Point(1123, 360);
-			this->agregarStockBtn->Margin = System::Windows::Forms::Padding(2);
+			this->agregarStockBtn->Location = System::Drawing::Point(1497, 443);
+			this->agregarStockBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->agregarStockBtn->Name = L"agregarStockBtn";
-			this->agregarStockBtn->Size = System::Drawing::Size(107, 42);
+			this->agregarStockBtn->Size = System::Drawing::Size(143, 52);
 			this->agregarStockBtn->TabIndex = 34;
 			this->agregarStockBtn->Text = L"Agregar";
 			this->agregarStockBtn->UseVisualStyleBackColor = false;
@@ -638,51 +664,51 @@ namespace CppCLRWinFormsProject {
 			// 
 			// dataGridViewStock
 			// 
-			dataGridViewCellStyle1->BackColor = System::Drawing::Color::White;
-			this->dataGridViewStock->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle49->BackColor = System::Drawing::Color::White;
+			this->dataGridViewStock->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
 			this->dataGridViewStock->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridViewStock->BackgroundColor = System::Drawing::SystemColors::Window;
 			this->dataGridViewStock->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridViewStock->CellBorderStyle = System::Windows::Forms::DataGridViewCellBorderStyle::None;
 			this->dataGridViewStock->ColumnHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::Single;
-			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
+			dataGridViewCellStyle50->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle50->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
 				static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
-			dataGridViewCellStyle2->ForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
-			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridViewStock->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle50->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
+			dataGridViewCellStyle50->ForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle50->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
+			dataGridViewCellStyle50->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle50->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridViewStock->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
 			this->dataGridViewStock->ColumnHeadersHeight = 50;
 			this->dataGridViewStock->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(7) {
 				this->nombre,
 					this->id, this->columnaStock, this->CategoriaID, this->limite, this->Código, this->Hora
 			});
-			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle3->BackColor = System::Drawing::Color::White;
-			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle51->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle51->BackColor = System::Drawing::Color::White;
+			dataGridViewCellStyle51->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle3->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
-			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::Color::Black;
-			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridViewStock->DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle51->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			dataGridViewCellStyle51->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
+			dataGridViewCellStyle51->SelectionForeColor = System::Drawing::Color::Black;
+			dataGridViewCellStyle51->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridViewStock->DefaultCellStyle = dataGridViewCellStyle51;
 			this->dataGridViewStock->EnableHeadersVisualStyles = false;
 			this->dataGridViewStock->GridColor = System::Drawing::Color::White;
-			this->dataGridViewStock->Location = System::Drawing::Point(7, 297);
-			this->dataGridViewStock->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewStock->Location = System::Drawing::Point(9, 366);
+			this->dataGridViewStock->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dataGridViewStock->Name = L"dataGridViewStock";
 			this->dataGridViewStock->ReadOnly = true;
-			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridViewStock->RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle52->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle52->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle52->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle52->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle52->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle52->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle52->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridViewStock->RowHeadersDefaultCellStyle = dataGridViewCellStyle52;
 			this->dataGridViewStock->RowHeadersVisible = false;
 			this->dataGridViewStock->RowHeadersWidth = 51;
 			this->dataGridViewStock->RowTemplate->DividerHeight = 1;
@@ -691,7 +717,7 @@ namespace CppCLRWinFormsProject {
 			this->dataGridViewStock->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->dataGridViewStock->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
 			this->dataGridViewStock->ShowRowErrors = false;
-			this->dataGridViewStock->Size = System::Drawing::Size(1075, 270);
+			this->dataGridViewStock->Size = System::Drawing::Size(1433, 332);
 			this->dataGridViewStock->TabIndex = 33;
 			// 
 			// nombre
@@ -745,6 +771,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->label16);
 			this->tabPage3->Controls->Add(this->blanquearBtn);
 			this->tabPage3->Controls->Add(this->actualizarUsuariosBtn);
 			this->tabPage3->Controls->Add(this->button2);
@@ -761,10 +788,11 @@ namespace CppCLRWinFormsProject {
 			this->tabPage3->Controls->Add(this->editarUsuariosBtn);
 			this->tabPage3->Controls->Add(this->agregarUsuariosBtn);
 			this->tabPage3->Controls->Add(this->dataGridViewUs);
-			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Location = System::Drawing::Point(4, 25);
+			this->tabPage3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(1229, 636);
+			this->tabPage3->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage3->Size = System::Drawing::Size(1641, 787);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Usuarios";
 			this->tabPage3->UseVisualStyleBackColor = true;
@@ -778,10 +806,10 @@ namespace CppCLRWinFormsProject {
 			this->blanquearBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->blanquearBtn->ForeColor = System::Drawing::Color::SteelBlue;
-			this->blanquearBtn->Location = System::Drawing::Point(1094, 172);
-			this->blanquearBtn->Margin = System::Windows::Forms::Padding(2);
+			this->blanquearBtn->Location = System::Drawing::Point(1459, 212);
+			this->blanquearBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->blanquearBtn->Name = L"blanquearBtn";
-			this->blanquearBtn->Size = System::Drawing::Size(124, 84);
+			this->blanquearBtn->Size = System::Drawing::Size(165, 103);
 			this->blanquearBtn->TabIndex = 41;
 			this->blanquearBtn->Text = L"Blanquear contraseña";
 			this->blanquearBtn->UseVisualStyleBackColor = false;
@@ -796,10 +824,10 @@ namespace CppCLRWinFormsProject {
 			this->actualizarUsuariosBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->actualizarUsuariosBtn->ForeColor = System::Drawing::Color::SteelBlue;
-			this->actualizarUsuariosBtn->Location = System::Drawing::Point(1111, 301);
-			this->actualizarUsuariosBtn->Margin = System::Windows::Forms::Padding(2);
+			this->actualizarUsuariosBtn->Location = System::Drawing::Point(1481, 370);
+			this->actualizarUsuariosBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->actualizarUsuariosBtn->Name = L"actualizarUsuariosBtn";
-			this->actualizarUsuariosBtn->Size = System::Drawing::Size(107, 42);
+			this->actualizarUsuariosBtn->Size = System::Drawing::Size(143, 52);
 			this->actualizarUsuariosBtn->TabIndex = 40;
 			this->actualizarUsuariosBtn->Text = L"Actualizar";
 			this->actualizarUsuariosBtn->UseVisualStyleBackColor = false;
@@ -807,9 +835,10 @@ namespace CppCLRWinFormsProject {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(191, 274);
+			this->button2->Location = System::Drawing::Point(255, 337);
+			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(23, 23);
+			this->button2->Size = System::Drawing::Size(31, 28);
 			this->button2->TabIndex = 39;
 			this->button2->Text = L"🔍";
 			this->button2->UseVisualStyleBackColor = true;
@@ -818,28 +847,31 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->buscador->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buscador->Location = System::Drawing::Point(9, 274);
+			this->buscador->Location = System::Drawing::Point(12, 337);
+			this->buscador->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->buscador->Name = L"buscador";
-			this->buscador->Size = System::Drawing::Size(175, 22);
+			this->buscador->Size = System::Drawing::Size(232, 26);
 			this->buscador->TabIndex = 38;
 			this->buscador->TextChanged += gcnew System::EventHandler(this, &MyForm::buscador_TextChanged);
 			// 
 			// legTB
 			// 
 			this->legTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12.75F));
-			this->legTB->Location = System::Drawing::Point(133, 120);
+			this->legTB->Location = System::Drawing::Point(177, 148);
+			this->legTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->legTB->Multiline = true;
 			this->legTB->Name = L"legTB";
-			this->legTB->Size = System::Drawing::Size(204, 30);
+			this->legTB->Size = System::Drawing::Size(271, 36);
 			this->legTB->TabIndex = 37;
 			// 
 			// permisoTB
 			// 
 			this->permisoTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12.75F));
-			this->permisoTB->Location = System::Drawing::Point(133, 168);
+			this->permisoTB->Location = System::Drawing::Point(177, 207);
+			this->permisoTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->permisoTB->Multiline = true;
 			this->permisoTB->Name = L"permisoTB";
-			this->permisoTB->Size = System::Drawing::Size(204, 30);
+			this->permisoTB->Size = System::Drawing::Size(271, 36);
 			this->permisoTB->TabIndex = 36;
 			// 
 			// label11
@@ -849,9 +881,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label11->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label11->Location = System::Drawing::Point(8, 168);
+			this->label11->Location = System::Drawing::Point(11, 207);
+			this->label11->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(89, 30);
+			this->label11->Size = System::Drawing::Size(115, 37);
 			this->label11->TabIndex = 35;
 			this->label11->Text = L"Permiso";
 			// 
@@ -862,19 +895,21 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label12->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label12->Location = System::Drawing::Point(8, 118);
+			this->label12->Location = System::Drawing::Point(11, 145);
+			this->label12->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(76, 30);
+			this->label12->Size = System::Drawing::Size(97, 37);
 			this->label12->TabIndex = 34;
 			this->label12->Text = L"Legajo";
 			// 
 			// apellidoTB
 			// 
 			this->apellidoTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12.75F));
-			this->apellidoTB->Location = System::Drawing::Point(133, 71);
+			this->apellidoTB->Location = System::Drawing::Point(177, 87);
+			this->apellidoTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->apellidoTB->Multiline = true;
 			this->apellidoTB->Name = L"apellidoTB";
-			this->apellidoTB->Size = System::Drawing::Size(204, 30);
+			this->apellidoTB->Size = System::Drawing::Size(271, 36);
 			this->apellidoTB->TabIndex = 33;
 			// 
 			// label13
@@ -884,9 +919,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label13->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label13->Location = System::Drawing::Point(8, 71);
+			this->label13->Location = System::Drawing::Point(11, 87);
+			this->label13->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(92, 30);
+			this->label13->Size = System::Drawing::Size(118, 37);
 			this->label13->TabIndex = 32;
 			this->label13->Text = L"Apellido";
 			// 
@@ -894,10 +930,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->nombreUsuarios->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->nombreUsuarios->Location = System::Drawing::Point(133, 21);
+			this->nombreUsuarios->Location = System::Drawing::Point(177, 26);
+			this->nombreUsuarios->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->nombreUsuarios->Multiline = true;
 			this->nombreUsuarios->Name = L"nombreUsuarios";
-			this->nombreUsuarios->Size = System::Drawing::Size(204, 30);
+			this->nombreUsuarios->Size = System::Drawing::Size(271, 36);
 			this->nombreUsuarios->TabIndex = 31;
 			// 
 			// label14
@@ -907,9 +944,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label14->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label14->Location = System::Drawing::Point(8, 21);
+			this->label14->Location = System::Drawing::Point(11, 26);
+			this->label14->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(93, 30);
+			this->label14->Size = System::Drawing::Size(118, 37);
 			this->label14->TabIndex = 30;
 			this->label14->Text = L"Nombre";
 			// 
@@ -923,10 +961,10 @@ namespace CppCLRWinFormsProject {
 			this->eliminarUsuariosBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->eliminarUsuariosBtn->ForeColor = System::Drawing::Color::DarkRed;
-			this->eliminarUsuariosBtn->Location = System::Drawing::Point(1111, 449);
-			this->eliminarUsuariosBtn->Margin = System::Windows::Forms::Padding(2);
+			this->eliminarUsuariosBtn->Location = System::Drawing::Point(1481, 553);
+			this->eliminarUsuariosBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->eliminarUsuariosBtn->Name = L"eliminarUsuariosBtn";
-			this->eliminarUsuariosBtn->Size = System::Drawing::Size(107, 45);
+			this->eliminarUsuariosBtn->Size = System::Drawing::Size(143, 55);
 			this->eliminarUsuariosBtn->TabIndex = 29;
 			this->eliminarUsuariosBtn->Text = L"Eliminar";
 			this->eliminarUsuariosBtn->UseVisualStyleBackColor = false;
@@ -941,10 +979,10 @@ namespace CppCLRWinFormsProject {
 			this->editarUsuariosBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->editarUsuariosBtn->ForeColor = System::Drawing::Color::SteelBlue;
-			this->editarUsuariosBtn->Location = System::Drawing::Point(1111, 399);
-			this->editarUsuariosBtn->Margin = System::Windows::Forms::Padding(2);
+			this->editarUsuariosBtn->Location = System::Drawing::Point(1481, 491);
+			this->editarUsuariosBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->editarUsuariosBtn->Name = L"editarUsuariosBtn";
-			this->editarUsuariosBtn->Size = System::Drawing::Size(107, 42);
+			this->editarUsuariosBtn->Size = System::Drawing::Size(143, 52);
 			this->editarUsuariosBtn->TabIndex = 28;
 			this->editarUsuariosBtn->Text = L"Editar";
 			this->editarUsuariosBtn->UseVisualStyleBackColor = false;
@@ -960,10 +998,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->agregarUsuariosBtn->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)),
 				static_cast<System::Int32>(static_cast<System::Byte>(169)), static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			this->agregarUsuariosBtn->Location = System::Drawing::Point(1111, 349);
-			this->agregarUsuariosBtn->Margin = System::Windows::Forms::Padding(2);
+			this->agregarUsuariosBtn->Location = System::Drawing::Point(1481, 430);
+			this->agregarUsuariosBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->agregarUsuariosBtn->Name = L"agregarUsuariosBtn";
-			this->agregarUsuariosBtn->Size = System::Drawing::Size(107, 42);
+			this->agregarUsuariosBtn->Size = System::Drawing::Size(143, 52);
 			this->agregarUsuariosBtn->TabIndex = 27;
 			this->agregarUsuariosBtn->Text = L"Agregar";
 			this->agregarUsuariosBtn->UseVisualStyleBackColor = false;
@@ -971,53 +1009,53 @@ namespace CppCLRWinFormsProject {
 			// 
 			// dataGridViewUs
 			// 
-			dataGridViewCellStyle5->BackColor = System::Drawing::Color::White;
-			this->dataGridViewUs->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle53->BackColor = System::Drawing::Color::White;
+			this->dataGridViewUs->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle53;
 			this->dataGridViewUs->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridViewUs->BackgroundColor = System::Drawing::SystemColors::Window;
 			this->dataGridViewUs->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridViewUs->CellBorderStyle = System::Windows::Forms::DataGridViewCellBorderStyle::None;
 			this->dataGridViewUs->ColumnHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::Single;
-			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
+			dataGridViewCellStyle54->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle54->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
 				static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
-			dataGridViewCellStyle6->ForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
-			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridViewUs->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle54->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
+			dataGridViewCellStyle54->ForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle54->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
+			dataGridViewCellStyle54->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle54->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridViewUs->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle54;
 			this->dataGridViewUs->ColumnHeadersHeight = 50;
 			this->dataGridViewUs->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(5) {
 				this->ColumnaNombre,
 					this->ColumnaApellido, this->ColumnaId, this->ColumnaLegajo, this->ColumnaPermiso
 			});
-			dataGridViewCellStyle7->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle7->BackColor = System::Drawing::Color::White;
-			dataGridViewCellStyle7->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle55->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle55->BackColor = System::Drawing::Color::White;
+			dataGridViewCellStyle55->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle7->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			dataGridViewCellStyle7->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
-			dataGridViewCellStyle7->SelectionForeColor = System::Drawing::Color::Black;
-			dataGridViewCellStyle7->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridViewUs->DefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle55->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			dataGridViewCellStyle55->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
+			dataGridViewCellStyle55->SelectionForeColor = System::Drawing::Color::Black;
+			dataGridViewCellStyle55->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridViewUs->DefaultCellStyle = dataGridViewCellStyle55;
 			this->dataGridViewUs->EditMode = System::Windows::Forms::DataGridViewEditMode::EditProgrammatically;
 			this->dataGridViewUs->EnableHeadersVisualStyles = false;
 			this->dataGridViewUs->GridColor = System::Drawing::Color::White;
-			this->dataGridViewUs->Location = System::Drawing::Point(9, 301);
-			this->dataGridViewUs->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewUs->Location = System::Drawing::Point(12, 370);
+			this->dataGridViewUs->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dataGridViewUs->MultiSelect = false;
 			this->dataGridViewUs->Name = L"dataGridViewUs";
 			this->dataGridViewUs->ReadOnly = true;
-			dataGridViewCellStyle8->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle8->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle8->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle8->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle8->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle8->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridViewUs->RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+			dataGridViewCellStyle56->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle56->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle56->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			dataGridViewCellStyle56->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle56->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle56->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle56->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridViewUs->RowHeadersDefaultCellStyle = dataGridViewCellStyle56;
 			this->dataGridViewUs->RowHeadersVisible = false;
 			this->dataGridViewUs->RowHeadersWidth = 51;
 			this->dataGridViewUs->RowTemplate->DividerHeight = 1;
@@ -1026,7 +1064,7 @@ namespace CppCLRWinFormsProject {
 			this->dataGridViewUs->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->dataGridViewUs->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
 			this->dataGridViewUs->ShowRowErrors = false;
-			this->dataGridViewUs->Size = System::Drawing::Size(1075, 270);
+			this->dataGridViewUs->Size = System::Drawing::Size(1433, 332);
 			this->dataGridViewUs->StandardTab = true;
 			this->dataGridViewUs->TabIndex = 26;
 			this->dataGridViewUs->SelectionChanged += gcnew System::EventHandler(this, &MyForm::dataGridViewUs_SelectionChanged);
@@ -1074,10 +1112,11 @@ namespace CppCLRWinFormsProject {
 			this->tabPage4->Controls->Add(this->dataGridCat);
 			this->tabPage4->Controls->Add(this->nombreCatTB);
 			this->tabPage4->Controls->Add(this->label15);
-			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Location = System::Drawing::Point(4, 25);
+			this->tabPage4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage4->Size = System::Drawing::Size(1229, 636);
+			this->tabPage4->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage4->Size = System::Drawing::Size(1641, 786);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Categorias";
 			this->tabPage4->UseVisualStyleBackColor = true;
@@ -1091,10 +1130,10 @@ namespace CppCLRWinFormsProject {
 			this->editarBtnCat->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->editarBtnCat->ForeColor = System::Drawing::Color::SteelBlue;
-			this->editarBtnCat->Location = System::Drawing::Point(141, 143);
-			this->editarBtnCat->Margin = System::Windows::Forms::Padding(2);
+			this->editarBtnCat->Location = System::Drawing::Point(188, 176);
+			this->editarBtnCat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->editarBtnCat->Name = L"editarBtnCat";
-			this->editarBtnCat->Size = System::Drawing::Size(107, 42);
+			this->editarBtnCat->Size = System::Drawing::Size(143, 52);
 			this->editarBtnCat->TabIndex = 45;
 			this->editarBtnCat->Text = L"Editar";
 			this->editarBtnCat->UseVisualStyleBackColor = false;
@@ -1110,10 +1149,10 @@ namespace CppCLRWinFormsProject {
 			this->eliminarBtnCat->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->eliminarBtnCat->ForeColor = System::Drawing::Color::DarkRed;
-			this->eliminarBtnCat->Location = System::Drawing::Point(277, 140);
-			this->eliminarBtnCat->Margin = System::Windows::Forms::Padding(2);
+			this->eliminarBtnCat->Location = System::Drawing::Point(369, 172);
+			this->eliminarBtnCat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->eliminarBtnCat->Name = L"eliminarBtnCat";
-			this->eliminarBtnCat->Size = System::Drawing::Size(107, 45);
+			this->eliminarBtnCat->Size = System::Drawing::Size(143, 55);
 			this->eliminarBtnCat->TabIndex = 44;
 			this->eliminarBtnCat->Text = L"Eliminar";
 			this->eliminarBtnCat->UseVisualStyleBackColor = false;
@@ -1129,10 +1168,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->agregarBtnCat->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
 				static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			this->agregarBtnCat->Location = System::Drawing::Point(8, 143);
-			this->agregarBtnCat->Margin = System::Windows::Forms::Padding(2);
+			this->agregarBtnCat->Location = System::Drawing::Point(11, 176);
+			this->agregarBtnCat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->agregarBtnCat->Name = L"agregarBtnCat";
-			this->agregarBtnCat->Size = System::Drawing::Size(107, 42);
+			this->agregarBtnCat->Size = System::Drawing::Size(143, 52);
 			this->agregarBtnCat->TabIndex = 43;
 			this->agregarBtnCat->Text = L"Agregar";
 			this->agregarBtnCat->UseVisualStyleBackColor = false;
@@ -1140,51 +1179,51 @@ namespace CppCLRWinFormsProject {
 			// 
 			// dataGridCat
 			// 
-			dataGridViewCellStyle9->BackColor = System::Drawing::Color::White;
-			this->dataGridCat->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+			dataGridViewCellStyle57->BackColor = System::Drawing::Color::White;
+			this->dataGridCat->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle57;
 			this->dataGridCat->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridCat->BackgroundColor = System::Drawing::SystemColors::Window;
 			this->dataGridCat->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridCat->CellBorderStyle = System::Windows::Forms::DataGridViewCellBorderStyle::None;
 			this->dataGridCat->ColumnHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::Single;
-			dataGridViewCellStyle10->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle10->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
+			dataGridViewCellStyle58->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle58->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
 				static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			dataGridViewCellStyle10->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
-			dataGridViewCellStyle10->ForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle10->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
-			dataGridViewCellStyle10->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle10->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridCat->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+			dataGridViewCellStyle58->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
+			dataGridViewCellStyle58->ForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle58->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
+			dataGridViewCellStyle58->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle58->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridCat->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
 			this->dataGridCat->ColumnHeadersHeight = 50;
 			this->dataGridCat->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(2) {
 				this->IdCategoria,
 					this->ColumnaCategoria
 			});
-			dataGridViewCellStyle11->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle11->BackColor = System::Drawing::Color::White;
-			dataGridViewCellStyle11->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle59->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle59->BackColor = System::Drawing::Color::White;
+			dataGridViewCellStyle59->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle11->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			dataGridViewCellStyle11->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
-			dataGridViewCellStyle11->SelectionForeColor = System::Drawing::Color::Black;
-			dataGridViewCellStyle11->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridCat->DefaultCellStyle = dataGridViewCellStyle11;
+			dataGridViewCellStyle59->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			dataGridViewCellStyle59->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
+			dataGridViewCellStyle59->SelectionForeColor = System::Drawing::Color::Black;
+			dataGridViewCellStyle59->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridCat->DefaultCellStyle = dataGridViewCellStyle59;
 			this->dataGridCat->EnableHeadersVisualStyles = false;
 			this->dataGridCat->GridColor = System::Drawing::Color::White;
-			this->dataGridCat->Location = System::Drawing::Point(3, 209);
-			this->dataGridCat->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridCat->Location = System::Drawing::Point(4, 257);
+			this->dataGridCat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dataGridCat->Name = L"dataGridCat";
 			this->dataGridCat->ReadOnly = true;
-			dataGridViewCellStyle12->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle12->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular,
+			dataGridViewCellStyle60->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle60->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle60->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			dataGridViewCellStyle12->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle12->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle12->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle12->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridCat->RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle60->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle60->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle60->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle60->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridCat->RowHeadersDefaultCellStyle = dataGridViewCellStyle60;
 			this->dataGridCat->RowHeadersVisible = false;
 			this->dataGridCat->RowHeadersWidth = 51;
 			this->dataGridCat->RowTemplate->DividerHeight = 1;
@@ -1193,7 +1232,7 @@ namespace CppCLRWinFormsProject {
 			this->dataGridCat->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->dataGridCat->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
 			this->dataGridCat->ShowRowErrors = false;
-			this->dataGridCat->Size = System::Drawing::Size(1282, 361);
+			this->dataGridCat->Size = System::Drawing::Size(1709, 444);
 			this->dataGridCat->TabIndex = 42;
 			// 
 			// IdCategoria
@@ -1217,10 +1256,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->nombreCatTB->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->nombreCatTB->Location = System::Drawing::Point(128, 51);
+			this->nombreCatTB->Location = System::Drawing::Point(171, 63);
+			this->nombreCatTB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->nombreCatTB->Multiline = true;
 			this->nombreCatTB->Name = L"nombreCatTB";
-			this->nombreCatTB->Size = System::Drawing::Size(256, 30);
+			this->nombreCatTB->Size = System::Drawing::Size(340, 36);
 			this->nombreCatTB->TabIndex = 41;
 			// 
 			// label15
@@ -1230,9 +1270,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->label15->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(23)), static_cast<System::Int32>(static_cast<System::Byte>(107)),
 				static_cast<System::Int32>(static_cast<System::Byte>(135)));
-			this->label15->Location = System::Drawing::Point(3, 51);
+			this->label15->Location = System::Drawing::Point(4, 63);
+			this->label15->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(93, 30);
+			this->label15->Size = System::Drawing::Size(118, 37);
 			this->label15->TabIndex = 40;
 			this->label15->Text = L"Nombre";
 			// 
@@ -1240,10 +1281,11 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->tabPage5->Controls->Add(this->actualizarMovBtn);
 			this->tabPage5->Controls->Add(this->dataGridViewMovimientos);
-			this->tabPage5->Location = System::Drawing::Point(4, 22);
+			this->tabPage5->Location = System::Drawing::Point(4, 25);
+			this->tabPage5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage5->Size = System::Drawing::Size(1229, 636);
+			this->tabPage5->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage5->Size = System::Drawing::Size(1641, 786);
 			this->tabPage5->TabIndex = 4;
 			this->tabPage5->Text = L"Movimientos";
 			this->tabPage5->UseVisualStyleBackColor = true;
@@ -1257,10 +1299,10 @@ namespace CppCLRWinFormsProject {
 			this->actualizarMovBtn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->actualizarMovBtn->ForeColor = System::Drawing::Color::SteelBlue;
-			this->actualizarMovBtn->Location = System::Drawing::Point(7, 12);
-			this->actualizarMovBtn->Margin = System::Windows::Forms::Padding(2);
+			this->actualizarMovBtn->Location = System::Drawing::Point(9, 15);
+			this->actualizarMovBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->actualizarMovBtn->Name = L"actualizarMovBtn";
-			this->actualizarMovBtn->Size = System::Drawing::Size(107, 42);
+			this->actualizarMovBtn->Size = System::Drawing::Size(143, 52);
 			this->actualizarMovBtn->TabIndex = 34;
 			this->actualizarMovBtn->Text = L"Actualizar";
 			this->actualizarMovBtn->UseVisualStyleBackColor = false;
@@ -1268,50 +1310,50 @@ namespace CppCLRWinFormsProject {
 			// 
 			// dataGridViewMovimientos
 			// 
-			dataGridViewCellStyle13->BackColor = System::Drawing::Color::White;
-			this->dataGridViewMovimientos->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle61->BackColor = System::Drawing::Color::White;
+			this->dataGridViewMovimientos->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
 			this->dataGridViewMovimientos->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridViewMovimientos->BackgroundColor = System::Drawing::SystemColors::Window;
 			this->dataGridViewMovimientos->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridViewMovimientos->CellBorderStyle = System::Windows::Forms::DataGridViewCellBorderStyle::None;
 			this->dataGridViewMovimientos->ColumnHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::Single;
-			dataGridViewCellStyle14->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
+			dataGridViewCellStyle62->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)), static_cast<System::Int32>(static_cast<System::Byte>(169)),
 				static_cast<System::Int32>(static_cast<System::Byte>(186)));
-			dataGridViewCellStyle14->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
-			dataGridViewCellStyle14->ForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle14->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
-			dataGridViewCellStyle14->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle14->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridViewMovimientos->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+			dataGridViewCellStyle62->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12.5F, System::Drawing::FontStyle::Bold));
+			dataGridViewCellStyle62->ForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle62->SelectionBackColor = System::Drawing::SystemColors::MenuHighlight;
+			dataGridViewCellStyle62->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle62->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridViewMovimientos->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
 			this->dataGridViewMovimientos->ColumnHeadersHeight = 70;
 			this->dataGridViewMovimientos->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(10) {
 				this->dataGridViewTextBoxColumn1,
 					this->articuloId, this->usuarioId, this->turnoId, this->subsectorId, this->cantidad, this->tipoMovimiento, this->esPedido, this->esDiferencia,
 					this->fechaHora
 			});
-			dataGridViewCellStyle15->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle15->BackColor = System::Drawing::Color::White;
-			dataGridViewCellStyle15->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle63->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle63->BackColor = System::Drawing::Color::White;
+			dataGridViewCellStyle63->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle15->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			dataGridViewCellStyle15->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
-			dataGridViewCellStyle15->SelectionForeColor = System::Drawing::Color::Black;
-			dataGridViewCellStyle15->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridViewMovimientos->DefaultCellStyle = dataGridViewCellStyle15;
+			dataGridViewCellStyle63->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			dataGridViewCellStyle63->SelectionBackColor = System::Drawing::Color::WhiteSmoke;
+			dataGridViewCellStyle63->SelectionForeColor = System::Drawing::Color::Black;
+			dataGridViewCellStyle63->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridViewMovimientos->DefaultCellStyle = dataGridViewCellStyle63;
 			this->dataGridViewMovimientos->EnableHeadersVisualStyles = false;
 			this->dataGridViewMovimientos->GridColor = System::Drawing::Color::White;
-			this->dataGridViewMovimientos->Location = System::Drawing::Point(3, 66);
-			this->dataGridViewMovimientos->Margin = System::Windows::Forms::Padding(10);
+			this->dataGridViewMovimientos->Location = System::Drawing::Point(4, 81);
+			this->dataGridViewMovimientos->Margin = System::Windows::Forms::Padding(13, 12, 13, 12);
 			this->dataGridViewMovimientos->Name = L"dataGridViewMovimientos";
 			this->dataGridViewMovimientos->ReadOnly = true;
-			dataGridViewCellStyle16->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular,
+			dataGridViewCellStyle64->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle64->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			dataGridViewCellStyle16->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle16->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle16->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle16->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridViewMovimientos->RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle64->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle64->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle64->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle64->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridViewMovimientos->RowHeadersDefaultCellStyle = dataGridViewCellStyle64;
 			this->dataGridViewMovimientos->RowHeadersVisible = false;
 			this->dataGridViewMovimientos->RowHeadersWidth = 51;
 			this->dataGridViewMovimientos->RowTemplate->DividerHeight = 1;
@@ -1320,7 +1362,7 @@ namespace CppCLRWinFormsProject {
 			this->dataGridViewMovimientos->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->dataGridViewMovimientos->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
 			this->dataGridViewMovimientos->ShowRowErrors = false;
-			this->dataGridViewMovimientos->Size = System::Drawing::Size(1282, 504);
+			this->dataGridViewMovimientos->Size = System::Drawing::Size(1709, 620);
 			this->dataGridViewMovimientos->TabIndex = 32;
 			// 
 			// dataGridViewTextBoxColumn1
@@ -1403,32 +1445,49 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->opcionesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->cerrarSesiónToolStripMenuItem });
 			this->opcionesToolStripMenuItem->Name = L"opcionesToolStripMenuItem";
-			this->opcionesToolStripMenuItem->Size = System::Drawing::Size(69, 20);
+			this->opcionesToolStripMenuItem->Size = System::Drawing::Size(85, 24);
 			this->opcionesToolStripMenuItem->Text = L"Opciones";
 			// 
 			// cerrarSesiónToolStripMenuItem
 			// 
 			this->cerrarSesiónToolStripMenuItem->Name = L"cerrarSesiónToolStripMenuItem";
-			this->cerrarSesiónToolStripMenuItem->Size = System::Drawing::Size(142, 22);
+			this->cerrarSesiónToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->cerrarSesiónToolStripMenuItem->Text = L"Cerrar sesión";
+			this->cerrarSesiónToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::cerrarSesiónToolStripMenuItem_Click);
 			// 
 			// menuStrip1
 			// 
+			this->menuStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->opcionesToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(1237, 24);
+			this->menuStrip1->Size = System::Drawing::Size(1649, 28);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
+			// label16
+			// 
+			this->label16->AutoSize = true;
+			this->label16->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label16->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(59)),
+				static_cast<System::Int32>(static_cast<System::Byte>(80)));
+			this->label16->Location = System::Drawing::Point(148, 247);
+			this->label16->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label16->Name = L"label16";
+			this->label16->Size = System::Drawing::Size(343, 23);
+			this->label16->TabIndex = 42;
+			this->label16->Text = L"1 = Administrador; 6 = Técnico; 7 = Usuario";
+			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1237, 686);
+			this->ClientSize = System::Drawing::Size(1649, 844);
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->tabControl1->ResumeLayout(false);
@@ -1450,16 +1509,8 @@ namespace CppCLRWinFormsProject {
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
-			this->FormClosing += gcnew FormClosingEventHandler(this, &MyForm::MyForm_FormClosing);
-
 		}
 #pragma endregion
-	public: System::Void init() {
-		CargarCategorias();
-		CargarMovimientos();
-		CargarStock();
-		CargarUsuarios();
-	}
 	private: System::Void MyForm_FormClosing(System::Object^ sender, FormClosingEventArgs^ e) {
 		Application::Exit();
 	}
@@ -1966,8 +2017,6 @@ namespace CppCLRWinFormsProject {
 			jsonBody["legajo"] = legajo;
 			jsonBody["permisoId"] = permisoId;
 			String^ putData = jsonBody->ToString();
-
-			MessageBox::Show("JSON enviado: " + jsonBody->ToString());
 
 			// Crear la solicitud HTTP PUT
 			HttpWebRequest^ request = dynamic_cast<HttpWebRequest^>(WebRequest::Create(apiUrl));
@@ -2522,6 +2571,10 @@ namespace CppCLRWinFormsProject {
 	private: System::Void actualizarMovBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		CargarMovimientos();
 		MessageBox::Show("Datos recargados correctamente.", "Información", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+
+	private: System::Void cerrarSesiónToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		Application::Restart();
 	}
 };
 }

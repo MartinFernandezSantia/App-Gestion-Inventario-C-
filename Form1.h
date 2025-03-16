@@ -347,7 +347,6 @@ namespace CppCLRWinFormsProject {
 				}
 				// Redirigir a la pantalla de inicio
 				MyForm^ mainForm = gcnew MyForm(permiso);
-				mainForm->init();
 				mainForm->Show();
 				this->Hide();
 

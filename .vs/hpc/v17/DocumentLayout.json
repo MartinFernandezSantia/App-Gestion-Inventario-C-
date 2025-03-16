@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marti\\Escritorio\\hpc\\",
+  "WorkspaceRootPath": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\hpc\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\hpc\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\hpc\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\hpc\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\hpc\\CppCLR_WinFormsProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:CppCLR_WinFormsProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{A70398DD-9A33-48D0-AA2C-4CBDCE44FC50}|hpc.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,31 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\hpc\\Form1.h",
+              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\Form1.h",
               "RelativeDocumentMoniker": "Form1.h",
-              "ToolTip": "C:\\Users\\marti\\Escritorio\\hpc\\Form1.h [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\Form1.h [Dise\u00F1o]",
               "RelativeToolTip": "Form1.h [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-15T20:58:08.571Z",
@@ -62,54 +42,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CppCLR_WinFormsProject.cpp",
-              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\hpc\\CppCLR_WinFormsProject.cpp",
-              "RelativeDocumentMoniker": "CppCLR_WinFormsProject.cpp",
-              "ToolTip": "C:\\Users\\marti\\Escritorio\\hpc\\CppCLR_WinFormsProject.cpp",
-              "RelativeToolTip": "CppCLR_WinFormsProject.cpp",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBQAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-15T20:14:14.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyForm.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\hpc\\MyForm.h",
-              "RelativeDocumentMoniker": "MyForm.h",
-              "ToolTip": "C:\\Users\\marti\\Escritorio\\hpc\\MyForm.h [Dise\u00F1o]",
-              "RelativeToolTip": "MyForm.h [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-15T19:56:13.082Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.h",
-              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\hpc\\Form1.h",
+              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\Form1.h",
               "RelativeDocumentMoniker": "Form1.h",
-              "ToolTip": "C:\\Users\\marti\\Escritorio\\hpc\\Form1.h",
+              "ToolTip": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\Form1.h",
               "RelativeToolTip": "Form1.h",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAAALAAAABTAAAA",
+              "ViewState": "AgIAAEwBAAAAAAAAAAApwF0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-15T18:52:23.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\hpc\\MyForm.h",
+              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\MyForm.h",
               "RelativeDocumentMoniker": "MyForm.h",
-              "ToolTip": "C:\\Users\\marti\\Escritorio\\hpc\\MyForm.h",
+              "ToolTip": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\MyForm.h",
               "RelativeToolTip": "MyForm.h",
-              "ViewState": "AQIAAKIFAAAAAAAAAAAAAKwFAAAaAAAA",
+              "ViewState": "AgIAAMkHAAAAAAAAAAApwOMHAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-15T15:21:41.87Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyForm.h [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\MyForm.h",
+              "RelativeDocumentMoniker": "MyForm.h",
+              "ToolTip": "C:\\Users\\marti\\Escritorio\\Code\\C\u002B\u002B\\App-Gestion-Inventario-C-\\MyForm.h [Dise\u00F1o]",
+              "RelativeToolTip": "MyForm.h [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-16T22:56:23.371Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

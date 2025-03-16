@@ -1,11 +1,157 @@
-﻿  Controller.cpp
-C:\Users\marti\Escritorio\hpc\MyForm.h(1832,24): warning C4101: 'ex': variable local sin referencia
-  (compilando archivo de origen "/Controller.cpp")
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MetaGen.targets(91,5): warning : Falta el archivo requerido "C:\USERS\MARTI\ESCRITORIO\HPC\X64\DEBUG\NEWTONSOFT.JSON.DLL".
+  pch.cpp
+  AssemblyInfo.cpp
+  Categorias.cpp
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(131,77): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(140,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(151,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(161,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(172,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(220,89): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(237,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(243,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Categorias.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Usuarios.h(748,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/Categorias.cpp")
   
   CppCLR_WinFormsProject.cpp
-C:\Users\marti\Escritorio\hpc\MyForm.h(1832,24): warning C4101: 'ex': variable local sin referencia
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\MyForm.h(1883,24): warning C4101: 'ex': variable local sin referencia
   (compilando archivo de origen "/CppCLR_WinFormsProject.cpp")
   
+  EstadisticasForm.cpp
+  Form1.cpp
+  Inicio.cpp
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Usuarios.h(748,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(131,77): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(140,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(151,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(161,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(172,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(220,89): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(237,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(243,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Inicio.cpp")
+  
+  Movimientos.cpp
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Usuarios.h(748,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(131,77): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(140,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(151,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(161,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(172,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(220,89): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(237,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(243,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Movimientos.cpp")
+  
+  MyForm.cpp
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\MyForm.h(1883,24): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/MyForm.cpp")
+  
+  Stock.cpp
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Usuarios.h(748,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(131,77): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(140,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(151,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(161,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(172,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(220,89): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(237,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(243,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Stock.cpp")
+  
+  Usuarios.cpp
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Usuarios.h(748,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(131,77): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(140,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(151,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(161,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(172,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(220,89): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(237,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\Categorias.h(243,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "/Usuarios.cpp")
+  
   Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  hpc.vcxproj -> C:\Users\marti\Escritorio\hpc\x64\Debug\hpc.exe
+  hpc.vcxproj -> C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\x64\Debug\hpc.exe

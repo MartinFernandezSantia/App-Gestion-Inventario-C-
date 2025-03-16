@@ -136,3 +136,14 @@ C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Stock.resources
 C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.Usuarios.resources
 C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
 C:\Users\marti\Escritorio\hpc\hpc\x64\Debug\hpc.vcxproj.Up2Date
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.vcxproj.AssemblyReference.cache
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.Categorias.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.EstadisticasForm.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.Form1.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.Inicio.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.Movimientos.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.MyForm.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.Stock.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.Usuarios.resources
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.vcxproj.GenerateResource.cache
+C:\Users\marti\Escritorio\Code\C++\App-Gestion-Inventario-C-\hpc\x64\Debug\hpc.vcxproj.Up2Date

@@ -43,8 +43,6 @@ Class CppCLRWinFormsProject.Usuarios: AutoLayout, AnsiClass, Class, Public, Befo
 Class CppCLRWinFormsProject.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Methods:
-    init(): PrivateScope, Public, HideBySig
 Class CppCLRWinFormsProject.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -60,8 +58,6 @@ Class CppCLRWinFormsProject.Form1: AutoLayout, AnsiClass, Class, Public, BeforeF
     System.String tipo : Public
     Boolean isPasswordVisible : Public
     System.String permiso : Public
-Class Controller: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class hpc.EstadisticasForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
